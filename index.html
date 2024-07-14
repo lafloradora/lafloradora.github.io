@@ -27,21 +27,72 @@
       body {
         margin: 0;
         padding: 0;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 100vh;
-        width: 100%;
+        font-family: "DM Sans", sans-serif;
+        overflow-y: hidden;
       }
 
       .logo {
         width: 100%;
+        height: 20rem;
+        position: absolute;
+      }
 
-        height: 75%;
+      .insta {
+        width: 32px;
+        height: 32px;
+        margin-top: 1.5rem;
+      }
+
+      .insta:hover {
+        opacity: 70%;
+      }
+
+      main {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+
+      h1 {
+        font-size: 1rem;
+        text-align: center;
+      }
+
+      .content {
+        width: 100%;
+        margin-top: 15rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .footer-image {
+        position: absolute;
+        width: 20rem;
+        bottom: -5rem;
+        right: 0;
       }
     </style>
   </head>
   <body>
-    <img src="assets/logo.svg" alt="logo" class="logo" />
+    <main>
+      <img src="assets/logo.svg" alt="logo" class="logo" />
+      <div class="content">
+        <h1>Laboratorio de diseño floral, arquitectónico y artístico</h1>
+        <a
+          href="https://www.instagram.com/lafloradora"
+          rel="noopener"
+          target="_blank"
+        >
+          <img src="assets/instagram.svg" alt="instagram" class="insta" />
+        </a>
+      </div>
+    </main>
+    <footer>
+      <img src="assets/footer-plant.png" alt="plant" class="footer-image" />
+    </footer>
   </body>
 </html>
