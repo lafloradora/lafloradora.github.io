@@ -4,13 +4,20 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview"
+    "clean": "rimraf dist .parcel-cache",
+    "dev": "npm run clean && parcel pages/*.html",
+    "build": "npm run clean && parcel build pages/*.html"
   },
   "devDependencies": {
-    "@tailwindcss/vite": "^4.1.7",
-    "tailwindcss": "^4.1.7",
-    "vite": "^6.3.5"
+    "@tailwindcss/postcss": "^4.1.8",
+    "parcel": "^2.15.2",
+    "parcel-reporter-static-files-copy": "^1.5.3",
+    "postcss": "^8.5.4",
+    "posthtml-include": "^2.0.1",
+    "rimraf": "^6.0.1",
+    "tailwindcss": "^4.1.8"
+  },
+  "staticFiles": {
+    "staticPath": "public"
   }
 }
