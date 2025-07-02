@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "clean": "rimraf dist .parcel-cache",
-    "dev": "parcel pages/*.html",
+    "dev": "npm run clean && parcel pages/*.html",
     "build": "npm run clean && parcel build pages/*.html"
   },
   "devDependencies": {
