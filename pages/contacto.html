@@ -8,11 +8,20 @@
   </head>
   <body class="m-0 p-0 font-sans min-h-screen flex flex-col">
     <include src="./templates/header.html"></include>
-    <main class="w-full flex-1 flex flex-col gap-10">
+    <main class="w-full flex-1 flex flex-col items-center gap-10">
       <h1 class="text-3xl text-red-600 text-center px-6">
         Contacto
       </h1>
-        <!-- <form class="w-full max-w-md bg-white rounded-lg shadow p-6 flex flex-col gap-4" action="#" method="POST">
+      <img src="/images/image-contactos/image_maribel_contactos.jpg" alt="Contacto con Maribel"
+        class="w-full max-w-sm h-60 mx-auto my-4 object-cover aspect-square rounded-lg shadow" />
+      <p class="mt-4 text-l text-gray-700 text-left px-10 md:px-96">
+        ¿Hablamos?
+      </p>
+      <p class="mt-1 text-l text-gray-700 text-left px-10 md:px-96">
+        Si quieres ponerte en contacto conmigo, puedes hacerlo a través de las redes sociales. Estoy aquí para ayudarte con
+        cualquier pregunta, duda o proyecto que tengas en mente.
+      </p>
+      <form class="w-full max-w-md bg-white rounded-lg shadow p-6 flex flex-col gap-4 mx-auto" name="contact" netlify>
         <label class="text-gray-700 font-semibold" for="nombre">Nombre</label>
         <input class="border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-red-300"
             type="text" id="nombre" name="nombre" required />
@@ -28,17 +37,8 @@
           <button type="submit" class="bg-red-600 text-white rounded px-4 py-2 mt-2 hover:bg-red-700 transition">
             Enviar
           </button>
-        </form> -->
-        <img src="/images/image-contactos/image_maribel_contactos.jpg" alt="Contacto con Maribel"
-          class="w-full max-w-sm h-60 mx-auto my-4 object-cover aspect-square rounded-lg shadow" />
-        <p class="mt-4 text-l text-gray-700 text-left px-10 md:px-96">
-          ¿Hablamos?       
-         </p>
-        <p class="mt-1 text-l text-gray-700 text-left px-10 md:px-96">
-          Si quieres ponerte en contacto conmigo, puedes hacerlo a través de las redes sociales. Estoy aquí para ayudarte con
-          cualquier pregunta, duda o proyecto que tengas en mente.
-        </p>
-      </main>
+        </form>
+       </main>
       <include src="./templates/footer.html"></include>
   </body>
 </html>
