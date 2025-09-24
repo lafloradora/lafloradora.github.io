@@ -8,6 +8,38 @@
   </head>
   <body class="m-0 p-0 font-sans min-h-screen flex flex-col">
     <include src="./templates/header.html"></include>
+    <nav class="w-full bg-red-100 border-b border-red-300 shadow mb-8">
+      <ul class="flex flex-wrap justify-center gap-6 py-4 text-lg font-semibold">
+        <li>
+          <a href="/pages/proyectos.html#bodas" class="text-red-600 hover:text-red-800 transition">Bodas</a>
+        </li>
+        <li>
+          <a href="/pages/proyectos.html#carteleria" class="text-red-600 hover:text-red-800 transition">Cartelería y
+            papelería</a>
+        </li>
+        <li>
+          <a href="/pages/proyectos.html#instalaciones" class="text-red-600 hover:text-red-800 transition">Instalaciones</a>
+        </li>
+        <li>
+          <a href="/pages/proyectos.html#arreglos" class="text-red-600 hover:text-red-800 transition">Arreglos florales</a>
+        </li>
+        <li>
+          <a href="/pages/proyectos.html#ramos" class="text-red-600 hover:text-red-800 transition">Ramos</a>
+        </li>
+        <li>
+          <a href="/pages/proyectos.html#coronas" class="text-red-600 hover:text-red-800 transition">Coronas</a>
+        </li>
+        <li>
+          <a href="/pages/proyectos.html#terrarios" class="text-red-600 hover:text-red-800 transition">Terrarios</a>
+        </li>
+        <li>
+          <a href="/pages/proyectos.html#accesorios" class="text-red-600 hover:text-red-800 transition">Accesorios</a>
+        </li>
+        <li>
+          <a href="/pages/proyectos.html#objetos" class="text-red-600 hover:text-red-800 transition">Objetos decorativos</a>
+        </li>
+      </ul>
+    </nav>
     <main class="w-full flex-1 flex flex-col gap-10">
       <h1 class="text-3xl text-red-600 text-center px-6">
         Proyectos
@@ -15,7 +47,7 @@
       <img src="/images/image-proyectos/portada-proyectos.jpg"
         alt="portada-proyectos"
         class="w-full max-w-3xl h-80 mx-auto my-4 object-cover rounded-lg shadow" />
-      <h2 class="text-2xl text-gray-600 text-center px-6 mb-1">
+      <h2 id="bodas" class="text-2xl text-gray-600 text-center px-6 mb-1">
         Bodas
       </h2>
       <div class="w-full columns-1 sm:columns-2 md:columns-3 gap-4 space-y-4 my-8">
@@ -74,7 +106,7 @@
             class="w-full object-cover rounded-lg shadow mb-2" />
              </div>
       </div>
-      <h2 class="text-2xl text-gray-600 text-center px-6 mb-1">
+      <h2 id="carteleria" class="text-2xl text-gray-600 text-center px-6 mb-1">
         Cartelería y papelería
       </h2>
       <div class="w-full columns-1 sm:columns-2 md:columns-3 gap-4 space-y-4 my-8">
@@ -123,7 +155,7 @@
               class="w-full object-cover rounded-lg shadow mb-2" />
           </div>
       </div>
-      <h2 class="text-2xl text-gray-600 text-center px-6 mb-1">
+      <h2 id="instalaciones" class="text-2xl text-gray-600 text-center px-6 mb-1">
           Instalaciones
         </h2>
         <div class="w-full columns-1 sm:columns-2 md:columns-3 gap-4 space-y-4 my-8">
@@ -161,7 +193,7 @@
               class="w-full object-cover rounded-lg shadow mb-2" />
           </div>
        </div>
-      <h2 class="text-2xl text-gray-600 text-center px-6 mb-1">
+      <h2 id="arreglos" class="text-2xl text-gray-600 text-center px-6 mb-1">
         Arreglos florales
       </h2>
       <div class="w-full columns-1 sm:columns-2 md:columns-3 gap-4 space-y-4 my-8">
@@ -270,7 +302,7 @@
           class="w-full object-cover rounded-lg shadow mb-2" />
          </div>
     </div>
-    <h2 class="text-2xl text-gray-600 text-center px-6 mb-1">
+    <h2 id="ramos" class="text-2xl text-gray-600 text-center px-6 mb-1">
       Ramos
     </h2>
     <div class="w-full columns-1 sm:columns-2 md:columns-3 gap-4 space-y-4 my-8">
@@ -310,7 +342,7 @@
           class="w-full object-cover rounded-lg shadow mb-2" />
         </div>
     </div>
-    <h2 class="text-2xl text-gray-600 text-center px-6 mb-1">
+    <h2 id="coronas" class="text-2xl text-gray-600 text-center px-6 mb-1">
      Coronas
     </h2>
     <div class="w-full columns-1 sm:columns-2 md:columns-3 gap-4 space-y-4 my-8">
@@ -339,7 +371,7 @@
           class="w-full object-cover rounded-lg shadow mb-2" />
       </div>
     </div>
-  <h2 class="text-2xl text-gray-600 text-center px-6 mb-1">
+  <h2 id="terrarios" class="text-2xl text-gray-600 text-center px-6 mb-1">
     Terrarios
   </h2>
   <div class="w-full columns-1 sm:columns-2 md:columns-3 gap-4 space-y-4 my-8">
@@ -380,7 +412,7 @@
         class="w-full object-cover rounded-lg shadow mb-2" />
        </div>
     </div>
- <h2 class="text-2xl text-gray-600 text-center px-6 mb-1">
+ <h2 id="accesorios" class="text-2xl text-gray-600 text-center px-6 mb-1">
       Accesorios
   </h2>
   <div class="w-full columns-1 sm:columns-2 md:columns-3 gap-4 space-y-4 my-8">
@@ -401,7 +433,7 @@
       class="w-full object-cover rounded-lg shadow mb-2" />
     </div>
   </div>
-<h2 class="text-2xl text-gray-600 text-center px-6 mb-1">
+<h2 id="objetos" class="text-2xl text-gray-600 text-center px-6 mb-1">
   Objetos decorativos
 </h2>
 <div class="w-full columns-1 sm:columns-2 md:columns-3 gap-4 space-y-4 my-8">
